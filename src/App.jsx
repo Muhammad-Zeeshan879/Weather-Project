@@ -39,7 +39,7 @@ function App() {
   const handleCitySearch = async (city) => {
     setLoading(true);
     setError("");
-    const apiKey = "ac46846f92b652500ce383c3d3519bc2";
+    const apiKey = import.meta.env.VITE_WEATHER_API_KEY; // ✅ from .env
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=${apiKey}`;
 
     try {
@@ -70,7 +70,7 @@ function App() {
     navigator.geolocation.getCurrentPosition(
       async (position) => {
         const { latitude, longitude } = position.coords;
-        const apiKey = "ac46846f92b652500ce383c3d3519bc2";
+        const apiKey = import.meta.env.VITE_WEATHER_API_KEY; // ✅ from .env
         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=${unit}&appid=${apiKey}`;
 
         try {

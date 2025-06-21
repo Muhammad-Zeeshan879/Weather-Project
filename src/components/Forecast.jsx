@@ -7,7 +7,7 @@ export default function Forecast({ city, unit }) {
     if (!city) return;
 
     const fetchForecast = async () => {
-      const apiKey = "ac46846f92b652500ce383c3d3519bc2";
+      const apiKey = import.meta.env.VITE_WEATHER_API_KEY; // ✅ from .env
       const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${unit}&appid=${apiKey}`;
       try {
         const res = await fetch(url);
