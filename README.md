@@ -1,12 +1,28 @@
-# React + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern weather application built with **React + Vite + Tailwind CSS**, using the **OpenWeatherMap API**.  
+Users can search for any city's weather, view a 5-day forecast, and detect weather by current location.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- 🔍 **Search by City** – Enter any city to get current weather and forecast
+- 📍 **Use My Location** – Get weather based on your current GPS coordinates
+- 🌡️ **°C / °F Toggle** – Easily switch between Celsius and Fahrenheit
+- ⛅ **5-Day Forecast** – Clean horizontal forecast cards
+- 🌈 **Dynamic Backgrounds** – Background gradient changes with weather condition
+- 🕘 **Recent Searches** – Quick access to recently searched cities
+- ⚠️ **Error Handling & Loader** – Smooth experience with fallbacks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [OpenWeatherMap API](https://openweathermap.org/api)
+- [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
+
+---
